@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Člověk",
+    "cultures": [
+      "Lidé království",
+      "Osadníci",
+      "Barbaři"
+    ],
+    "abilities": [
+      {
+        "name": "Ve jménu krále (rychlá volba: Lidé království)",
+        "description": "Když postava podstupuje zkoušku nebo střet, aby prosadila zájmy pána nebo organizace, kterým dlouhodobě slouží, a její život je při této zkoušce či střetu v ohrožení, dává jí každá jizva 1 zdroj navíc. (bez aktivace, Duše)"
+      },
+      {
+        "name": "Zarputilost (rychlá volba: Osadníci)",
+        "description": "Z každé jizvy na Vlivu získává postava vždy 1 zdroj navíc. (bez aktivace, Vliv)"
+      },
+      {
+        "name": "Idol mužů či žen",
+        "description": "Postava má nadání (2 manévry) pro svádění a zís- kávání přízně osob opačného pohlaví. (bez aktivace, Vliv)"
+      },
+      {
+        "name": "Lví srdce (rychlá volba: Barbaři)",
+        "description": "Postava má nadání (2 manévry) čelit zastrašování či psychickému nátlaku. (bez aktivace, Duše)"
+      },
+      {
+        "name": "Styky",
+        "description": "Hráč může stanovit, že určitá cizí postava dluží jeho postavě z minulosti laskavost, nebo že s ní má společného známého, ke kterému mají oba kladný vztah. (aktivace: 1 Vliv)"
+      }
+    ]
+  },
+  {
+    "name": "Elf",
+    "cultures": [
+      "Lid pahorků (Elfové Domů)",
+      "Lid noci",
+      "Lesní elfové"
+    ],
+    "abilities": [
+      {
+        "name": "Vznešenost (rychlá volba: Lid pahorků)",
+        "description": "Na hojení jizev na Vlivu stačí postavě vynaložit o 1 zdroj méně. (bez aktivace, Vliv)"
+      },
+      {
+        "name": "Tesknota",
+        "description": "Z každé duševní jizvy získává postava vždy 1 zdroj navíc. (bez aktivace, Duše)"
+      },
+      {
+        "name": "Jsme jedné krve (rychlá volba: Lesní elfové)",
+        "description": "Postava má nadání (2 manévry) pro odhadování vlastností a úmyslů zvířat a pro jejich přesvědčování bez přímého ovládání. (bez aktivace, Vliv)"
+      },
+      {
+        "name": "Plášť soumraku (rychlá volba: Lid noci)",
+        "description": "Postava má nadání (2 manévry) pro skrývání se ve tmě, v šeru nebo při špatném osvětlení. (bez aktiva- ce, Duše)"
+      },
+      {
+        "name": "Paměť rodu",
+        "description": "Hráč může stanovit, jak určité místo vypadalo nebo jaký příběh se na něm odehrál v minulosti, musí však jít o minulost vzdálenou nejméně dvanáct let. (aktivace: 1 Duše)"
+      }
+    ]
+  },
+  {
+    "name": "Trpaslík",
+    "cultures": [
+      "Horští trpaslíci",
+      "Hlubinní trpaslíci",
+      "Osamocení trpaslíci"
+    ],
+    "abilities": [
+      {
+        "name": "Noční oči (rychlá volba: Hlubinní trpaslíci)",
+        "description": "Postava s touto vyhrazenou dovedností dokáže vidět ve tmě. (bez aktivace, Duše)"
+      },
+      {
+        "name": "Síla přísahy (rychlá volba: Horští trpaslíci)",
+        "description": "Když postava podstupuje zkoušku nebo střet, aby splnila svou přísahu, a její život je přitom v ohrožení, dává jí každá jizva 1 zdroj navíc. (bez aktivace, Duše)"
+      },
+      {
+        "name": "Nezdolnost (rychlá volba: Osamocení trpaslíci)",
+        "description": "Na hojení tělesných jizev stačí postavě vynaložit o 1 zdroj méně. (bez aktivace, Tělo)"
+      },
+      {
+        "name": "Játra ze žuly",
+        "description": "Postava má nadání (2 manévry) čelit účinkům omamných látek a jedů. (bez aktivace, Tělo)"
+      },
+      {
+        "name": "Pouto krve",
+        "description": "Hráč může stanovit, že určitý trpaslík patří k pří- buzným jeho postavy nebo má k jejímu rodu závazky. (aktivace: 1 Vliv)"
+      }
+    ]
+  },
+  {
+    "name": "Hobit",
+    "cultures": [
+      "Usedlí hobiti",
+      "Potulní hobiti",
+      "Horda"
+    ],
+    "abilities": [
+      {
+        "name": "Šestý smysl",
+        "description": "Postava s touto vyhrazenou dovedností dokáže rozpoznat hrozící nebezpečí, i když nemá k dispozici žádné běžnými smysly zachytitelné podněty. (bez aktivace, Duše)"
+      },
+      {
+        "name": "Takový prcek! (rychlá volba: Horda)",
+        "description": "Když postava bojuje zblízka se soupeřem větším než je sama, který ji dosud neviděl bojovat, dává jí každá jizva 1 zdroj navíc. (bez aktivace, Duše)"
+      },
+      {
+        "name": "Dobrá nálada (rychlá volba: Usedlí hobiti)",
+        "description": "Na hojení duševních jizev stačí postavě vynaložit o 1 zdroj méně. (bez aktivace, Duše)"
+      },
+      {
+        "name": "Tichošlápek (rychlá volba: Potulní hobiti)",
+        "description": "Postava má nadání (2 manévry) pro tichý pohyb, pokud při něm nemá na nohách boty. (bez aktivace, Tělo)"
+      },
+      {
+        "name": "Labužník",
+        "description": "Hráč může kdykoliv, kdy je to uvěřitelné, určit, že jeho postava má u sebe něco dobrého – placatku s vínem či kořalkou, hrst dýmkového tabáku nebo třeba pytlíček rozinek, sušených hub či exotického koření. (aktivace: 1 Duše)"
+      }
+    ]
+  },
+  {
+    "name": "Kroll",
+    "cultures": [
+      "Hraniční krollové",
+      "Divocí krollové",
+      "Spoutaní krollové"
+    ],
+    "abilities": [
+      {
+        "name": "Netopýří sluch",
+        "description": "Postava s touto vyhrazenou dovedností dokáže za- slechnout i velmi tiché zvuky a orientovat se podle nich i ve tmě. (bez aktivace, Duše)"
+      },
+      {
+        "name": "Zběsilost (rychlá volba: Spoutaní krollové)",
+        "description": "Z každé tělesné jizvy získává postava vždy 1 zdroj navíc. (bez aktivace, Tělo)"
+      },
+      {
+        "name": "Odznaky hrdinství (rychlá volba: Hraniční krollové)",
+        "description": "Postava má nadání (2 manévry) pro zastrašování všech tvorů inteligentnějších než zvířata. (bez aktivace, Vliv)"
+      },
+      {
+        "name": "Zubří kůže (rychlá volba: Divocí krollové)",
+        "description": "Pokožka dává postavě slevu odpovídající běžné zbroji, avšak bez jejích omezení. (bez aktivace, Tělo)"
+      },
+      {
+        "name": "Kořeny magie",
+        "description": "Hráč může určit, že se poblíž nachází přirozené ma- gické zřídlo, musí však popsat, jaká je jeho podstata, případně jak vzniklo. (aktivace: 1 Vliv)"
+      }
+    ]
+  }
+]

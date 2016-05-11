@@ -1,0 +1,73 @@
+<resources>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu_new_character">Create a new character</string>
+    <string name="menu_list_characters">List characters</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_share">Share</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">DrD 2 sheet</string>
+    <string name="fragment_character_list">Character list</string>
+
+    <!-- Create a new character fragment -->
+    <string name="create_character_name">Name</string>
+    <string name="create_character_male">male</string>
+    <string name="create_character_female">female</string>
+
+    <string name="create_character_race">Race:</string>
+    <string name="create_character_add_race">Add a new race</string>
+    <string-array name="race">
+        <item>Human</item>
+        <item>Elf</item>
+        <item>Dwarf</item>
+        <item>Hobbit</item>
+        <item>Kroll</item>
+    </string-array>
+
+    <string name="create_character_culture">Culture:</string>
+    <string name="create_character_add_culture">Add a new culture</string>
+
+    <string-array name="culture_human">
+        <item>Kingdom folk</item>
+        <item>Settlers</item>
+        <item>Barbarians</item>
+    </string-array>
+
+    <string-array name="culture_elves">
+        <item>Elves of the hills (Elvish Houses)</item>
+        <item>People of the night</item>
+        <item>Forest elves</item>
+    </string-array>
+
+    <string-array name="culture_dwarfs">
+        <item>Mountain dwarfs</item>
+        <item>Dwarfs of the deep</item>
+        <item>Loners</item>
+    </string-array>
+
+    <string-array name="culture_hobbits">
+        <item>Settled</item>
+        <item>Wandering</item>
+        <item>Horde</item>
+    </string-array>
+
+    <string-array name="culture_krolls">
+        <item>Frontier</item>
+        <item>Wild</item>
+        <item>Enslaved</item>
+    </string-array>
+
+    <string name="create_character_special_ability">Special abilities</string>
+
+    <string-array name="abilities_human">
+        <item>In the name of the king (kingdom)</item>
+        <item>Dourness (settlers)</item>
+        <item>Idol of men or women</item>
+        <item>Lion heart (barbarians)</item>
+        <item>Connections</item>
+    </string-array>
+
+    <string name="create_character_profession">Profession</string>
+</resources>

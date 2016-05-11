@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DrD 2 deník postavy</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="navigation_drawer_close">Zavřít navigační panel</string>
+    <string name="navigation_drawer_open">Otevřít navigační panel</string>
+    <string name="menu_new_character">Vytvořit novou postavu</string>
+    <string name="menu_list_characters">Seznam postav</string>
+    <string name="menu_tools">Nástroje</string>
+    <string name="menu_settings">Nastavení</string>
+    <string name="menu_share">Sdílet</string>
+    <string name="fragment_character_list">Seznam postav</string>
+
+    <!-- Create a new character fragment -->
+    <string name="create_character_name">Jméno</string>
+    <string name="create_character_male">muž</string>
+    <string name="create_character_female">žena</string>
+
+    <string name="create_character_race">Rasa:</string>
+    <string name="create_character_add_race">Přidat rasu</string>
+    <string-array name="race">
+        <item>Člověk</item>
+        <item>Elf</item>
+        <item>Trpaslík</item>
+        <item>Hobit</item>
+        <item>Kroll</item>
+    </string-array>
+
+    <string name="create_character_culture">Kultura:</string>
+    <string name="create_character_add_culture">Přidat kulturu</string>
+
+    <string-array name="culture_human">
+        <item>Lidé království</item>
+        <item>Osadníci</item>
+        <item>Barbaři</item>
+    </string-array>
+
+    <string-array name="culture_elves">
+        <item>Elfové kopců (Efové domů)</item>
+        <item>Lid noci</item>
+        <item>Lesní elfové</item>
+    </string-array>
+
+    <string-array name="culture_dwarfs">
+        <item>Horští trpaslíci</item>
+        <item>Hlubinní trpaslíci</item>
+        <item>Samotáři</item>
+    </string-array>
+
+    <string-array name="culture_hobbits">
+        <item>Usazení</item>
+        <item>Putující</item>
+        <item>Horda</item>
+    </string-array>
+
+    <string-array name="culture_krolls">
+        <item>Hraniční</item>
+        <item>Divocí</item>
+        <item>Spoutaní</item>
+    </string-array>
+
+    <string name="create_character_special_ability">Zvláštní schopnosti</string>
+
+    <string-array name="abilities_human">
+        <item>Ve jménu krále (lidé království)</item>
+        <item>Zarputilost (osadníci)</item>
+        <item>Idol mužů či žen</item>
+        <item>Lví srdce (barbaři)</item>
+        <item>Styky</item>
+    </string-array>
+
+    <string name="create_character_profession">Povolání</string>
+</resources>

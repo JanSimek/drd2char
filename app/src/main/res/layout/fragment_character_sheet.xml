@@ -1,0 +1,236 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.simek.drd2char.CharacterSheetFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/create_character_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/gender">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/create_character_name"
+                android:id="@+id/character_name"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender"
+            android:layout_alignParentRight="true"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:src="@drawable/ic_gender_male"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/create_character_race"
+            android:id="@+id/lbl_race"
+            android:layout_below="@+id/create_character_name_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBaseline="@id/race"
+            android:layout_toLeftOf="@id/race"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="4dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/race"
+            android:layout_below="@+id/create_character_name_layout"
+            android:layout_toLeftOf="@+id/edit_race"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_race"
+            android:layout_below="@id/gender"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/ic_edit"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/create_character_culture"
+            android:id="@+id/lbl_culture"
+            android:layout_below="@+id/race"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBaseline="@+id/culture"
+            android:layout_toLeftOf="@+id/culture"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="4dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/culture"
+            android:layout_below="@+id/race"
+            android:layout_toLeftOf="@+id/edit_culture"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_culture"
+            android:layout_below="@id/edit_race"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/ic_edit"
+            android:background="@null"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/special_ability_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/add_special_ability"
+            android:layout_below="@id/lbl_culture" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:hint="@string/create_character_special_ability"
+                android:id="@+id/race_special_ability"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_special_ability"
+            android:layout_below="@id/edit_culture"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/ic_add"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tělo:"
+            android:id="@+id/lbl_body"
+            android:layout_below="@+id/special_ability_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBaseline="@+id/pickBody"
+            android:paddingBottom="8dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="8dp"/>
+
+        <NumberPicker
+            android:layout_width="48dp"
+            android:layout_height="72dp"
+            android:id="@+id/pickBody"
+            android:layout_below="@+id/special_ability_layout"
+            android:layout_toEndOf="@id/lbl_body"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Duše:"
+            android:id="@+id/lbl_soul"
+            android:layout_below="@+id/special_ability_layout"
+            android:layout_alignBaseline="@+id/pickSoul"
+            android:layout_toRightOf="@id/pickBody"
+            android:paddingBottom="8dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"/>
+
+        <NumberPicker
+            android:layout_width="48dp"
+            android:layout_height="72dp"
+            android:id="@+id/pickSoul"
+            android:layout_below="@+id/special_ability_layout"
+            android:layout_toEndOf="@id/lbl_soul"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Vliv:"
+            android:id="@+id/lbl_influence"
+            android:layout_below="@+id/special_ability_layout"
+            android:layout_alignBaseline="@+id/pickInfluence"
+            android:layout_toRightOf="@id/pickSoul"
+            android:paddingBottom="8dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"/>
+
+        <NumberPicker
+            android:layout_width="48dp"
+            android:layout_height="72dp"
+            android:id="@+id/pickInfluence"
+            android:layout_below="@+id/special_ability_layout"
+            android:layout_toEndOf="@id/lbl_influence"
+            />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/profession_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/lbl_body"
+            android:layout_toLeftOf="@+id/add_profession"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/create_character_profession"
+                android:id="@+id/profession"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_profession"
+            android:layout_below="@id/pickInfluence"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/ic_add"
+            android:background="@null"/>
+
+    </RelativeLayout>
+</FrameLayout>
