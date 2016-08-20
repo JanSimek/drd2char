@@ -13,6 +13,7 @@
 
     <!-- Create a new character fragment -->
     <string name="create_character_name">Name</string>
+    <string name="create_character_trait">Character trait</string>
     <string name="create_character_male">male</string>
     <string name="create_character_female">female</string>
 
@@ -60,6 +61,8 @@
     </string-array>
 
     <string name="create_character_special_ability">Special abilities</string>
+    <string name="create_character_remove">Remove</string>
+    <string name="create_character_keep">Keep</string>
 
     <string-array name="abilities_human">
         <item>In the name of the king (kingdom)</item>
@@ -70,4 +73,6 @@
     </string-array>
 
     <string name="create_character_profession">Profession</string>
+    <string name="title_activity_create_character">Create a new character</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

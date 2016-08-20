@@ -13,6 +13,7 @@
 
     <!-- Create a new character fragment -->
     <string name="create_character_name">Jméno</string>
+    <string name="create_character_trait">Povahový rys</string>
     <string name="create_character_male">muž</string>
     <string name="create_character_female">žena</string>
 
@@ -60,6 +61,8 @@
     </string-array>
 
     <string name="create_character_special_ability">Zvláštní schopnosti</string>
+    <string name="create_character_remove">Odebrat</string>
+    <string name="create_character_keep">Ponechat</string>
 
     <string-array name="abilities_human">
         <item>Ve jménu krále (lidé království)</item>

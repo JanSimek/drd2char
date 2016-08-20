@@ -1,2 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.3.0_2607541870a6bfc222c3df39cd0b92a750ce0aa1/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ebae027a6fa1c20ad8fb19256eaaa70d21d67dc9">
+        <dex dex="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8cd62bad0567849fa3f5d26c6dd9bd3bf862c636/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.3.0_3d1e9134e8cde032f1dac1b4f8d34961419e1d7a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.3.0_6cd788059eb4e5af8e2a2771b669ae08f8086643/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.3.0_8c330a3de2c4cd71f43f31b50645609b84974c62/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jansimek/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.3.0_3e80b2e238f7a75f80ebb5777196e3ae2c51c497/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.3.0_b32a8d8ce494ba83200b8bf231fc3ab4a5ad2360/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.3.0_671213a6c2cfec406a557b767b09c8590a10455a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5786cbfb7422bf378b187cd972686c6b50b1f423">
+        <dex dex="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_85634707051a6b94a6c6d647118177ddf8decca9/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/Users/jansimek/Development/Android/DrD2char/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.3.0_20fd451d3f6af1a30f15423ef397a93dcd018783/classes.dex" />
+    </item>
+
+</items>

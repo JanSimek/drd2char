@@ -15,6 +15,8 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.NumberPicker;
 import android.widget.Spinner;
@@ -152,11 +154,40 @@ public class CharacterSheetFragment extends Fragment {
                 for(Ability culture : race.getCultures()) {
                     culture_adapter.add(culture.getName());
                 }
+
                 ability_adapter.clear();
+                // This ability can always be chosen instead of a racial ability
+                ability_adapter.add(new Ability("Rodová zbraň",
+                        "Hráč si vybere jeden druh zbraně pro boj zblízka nebo z dálky. Když s takovou zbraní postava bojuje, má právo použít jednou za kolo zdarma manévr obrana, jestliže v akci, kterou pomocí tohoto manévru provede, rodovou zbraň nějak využije. (bez aktivace, Tělo)"));
                 for(Ability ability : race.getAbilities()) {
                     ability_adapter.add(ability);
                 }
             }
+        }
+    }
+
+
+    /**
+     * HACK: Next time don't put ListView inside ScrollView!
+     */
+    public class Utility {
+        public /*static*/ void setListViewHeightBasedOnChildren(ListView listView) {
+            ListAdapter listAdapter = listView.getAdapter();
+            if (listAdapter == null) {
+                // pre-condition
+                return;
+            }
+
+            int totalHeight = 0;
+            for (int i = 0; i < listAdapter.getCount(); i++) {
+                View listItem = listAdapter.getView(i, null, listView);
+                listItem.measure(0, 0);
+                totalHeight += listItem.getMeasuredHeight();
+            }
+
+            ViewGroup.LayoutParams params = listView.getLayoutParams();
+            params.height = totalHeight + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
+            listView.setLayoutParams(params);
         }
     }
 
@@ -187,7 +218,7 @@ public class CharacterSheetFragment extends Fragment {
 
         race_spinner = (Spinner) view.findViewById(R.id.race);
         culture_spinner = (Spinner) view.findViewById(R.id.culture);
-        race_special_ability = (EditText) view.findViewById(R.id.race_special_ability);
+        //race_special_ability = (EditText) view.findViewById(R.id.race_special_ability);
 
         races = mListener.getRaces();
 
@@ -287,7 +318,7 @@ public class CharacterSheetFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                builder.setTitle(getResources().getString(R.string.create_character_special_ability) + " (" + race_spinner.getSelectedItem().toString()  + ")")
+                builder.setTitle(getResources().getString(R.string.create_character_special_ability) + "\n(" + race_spinner.getSelectedItem().toString()  + ", Válečník)")
                         .setAdapter(ability_adapter, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -298,19 +329,60 @@ public class CharacterSheetFragment extends Fragment {
                             @Override
                             public void onClick(DialogInterface dialog, int id) {
                                 StringBuffer responseText = new StringBuffer();
-                                race_special_ability.setText("");
-                                responseText.append("The following were selected...\n");
-                                for (int i = 0; i < ability_adapter.getCount(); i++) {
-                                    if (ability_adapter.isChecked(i)) {
-                                        responseText.append("\n" + ability_adapter.getItem(i).getName());
-                                        if(!race_special_ability.getText().toString().equals("")) {
-                                            race_special_ability.append("\n");
-                                        }
-                                        race_special_ability.append(ability_adapter.getItem(i).getName());
-                                    }
-                                }
+                                //race_special_ability.setText("");
 
-                                Toast.makeText(getContext(), responseText, Toast.LENGTH_LONG).show();
+                                final ListView special_ability_list = (ListView) view.findViewById(R.id.special_ability_list);
+                                final ArrayAdapter<String> selected_abilities = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, android.R.id.text1);
+
+
+                                try {
+                                    responseText.append("The following were selected...\n");
+                                    for (int i = 0; i < ability_adapter.getCount(); i++) {
+                                        if (ability_adapter.isChecked(i)) {
+                                            responseText.append("\n" + ability_adapter.getItem(i).getName());
+
+                                            //if(!race_special_ability.getText().toString().equals("")) {
+                                            //    race_special_ability.append("\n");
+                                            //}
+                                            //race_special_ability.append(ability_adapter.getItem(i).getName());
+                                            selected_abilities.add(ability_adapter.getItem(i).getName());
+                                        }
+                                    }
+                                    Toast.makeText(getContext(), responseText, Toast.LENGTH_LONG).show();
+                                } catch (IndexOutOfBoundsException e) {
+                                    // FIXME: exception when no ability is selected
+                                    // do nothing for now
+                                }
+                                special_ability_list.setAdapter(selected_abilities);
+
+                                Utility util = new Utility();
+                                util.setListViewHeightBasedOnChildren(special_ability_list);
+                                special_ability_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                    @Override
+                                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                        final String remove = (String) selected_abilities.getItem(position);
+
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                                        builder.setMessage("Odebrat zvláštní schopnost?\n\n\"" + remove + "\"");
+
+                                        builder.setPositiveButton(R.string.create_character_remove, new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                selected_abilities.remove(remove);
+                                                selected_abilities.notifyDataSetChanged();
+                                            }
+                                        });
+                                        builder.setNegativeButton(R.string.create_character_keep, new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                // do nothing
+                                            }
+                                        });
+                                        builder.create();
+                                        builder.show();
+                                    }
+                                });
+
 
                             /*
                             for (int ability : mAbilitiesSelected) {
